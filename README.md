@@ -1,5 +1,5 @@
 # Orange Cosmos Roleplay (OCRP)
-An updated version of the old Garry's Mod gamemode
+An updated version of the old Garry's Mod gamemode run initially by Orange Cosmos and later by Catalyst Gaming. This version is based on the [code released publicly on Facepunch](https://facepunch.com/showthread.php?t=1090021) by the original creator.
 
 This was a Lua learning project for me. As such, do not expect perfection. Issues are definitely present, but if you report them I'll do my best to fix. I didn't intend initially to release this, but I don't have the time to run it on a server and it feels a waste not to share. I'm also happy to accept pull requests.
 
