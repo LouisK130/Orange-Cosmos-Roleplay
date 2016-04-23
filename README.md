@@ -8,10 +8,10 @@ Requires:
 * VCMod ELS
 * ULX
 * ULib
-* OCRP Content Pack
+* [OCRP Content Pack](http://www.mediafire.com/download/ao9qdqspov18xae/ocrp-content.zip) (on client and server)
 * MySQL Database
 * mysqloo module
-* rp_evocity_v4b1 (could be adapted for other maps with basic knowledge of Lua)
+* [rp_evocity_v4b1](http://www.mediafire.com/download/n05bdy0y1t5cabc/RP_EvoCity_v4b1.zip) (could be adapted for other maps with basic knowledge of Lua)
 
 Recommended:
 * Atmos Weather
