@@ -1,0 +1,37 @@
+local SKIN = {}
+SKIN.PrintName 					= "OCRP Skin"
+SKIN.Author 					= "Jake_1305"
+SKIN.DermaVersion				= 1
+SKIN.colOutline					= Color( 255, 165, 0, 225 )
+SKIN.colPropertySheet 			= Color( 225, 225, 225, 255 )
+SKIN.colTab			 			= SKIN.colPropertySheet
+SKIN.colTabText		 			= Color( 51, 51, 51, 225 )
+SKIN.colTabInactive				= Color( 225, 225, 225, 225 )
+SKIN.colTabShadow				= Color( 0, 0, 0, 225 )
+SKIN.fontButton					= "Default"
+SKIN.fontTab					= "Default"
+SKIN.bg_color 					= Color( 0, 0, 0, 225 )
+SKIN.bg_color_sleep 			= Color( 225, 225, 225, 225 )
+SKIN.bg_color_dark				= Color( 0, 0, 0, 225 )
+SKIN.bg_color_bright			= Color( 225, 225, 225, 225 )
+SKIN.listview_hover				= Color( 31, 31, 31, 225 )
+SKIN.listview_selected			= Color( 0, 0, 0, 225 )
+SKIN.control_color 				= Color( 255, 140, 0, 225 )
+SKIN.control_color_highlight	= Color( 225, 140, 0, 255 )
+SKIN.control_color_active 		= Color( 31, 31, 31, 225 )
+SKIN.control_color_bright 		= Color( 31, 31, 31, 225 )
+SKIN.control_color_dark 		= Color( 31, 31, 31, 255 )
+SKIN.text_bright				= Color( 0, 0, 0, 255 )
+SKIN.text_normal				= Color( 51, 51, 51, 225 )
+SKIN.text_dark					= Color( 255, 225, 225, 255 )
+SKIN.text_highlight				= Color( 0, 0, 0, 20 )
+SKIN.colCategoryText			= Color( 51, 51, 51, 255 )
+SKIN.colCategoryTextInactive	= Color( 31, 31, 31, 255 )
+SKIN.fontCategoryHeader			= "TabLarge"
+SKIN.colTextEntryTextHighlight	= Color( 31, 31, 31, 255 )
+SKIN.colTextEntryTextHighlight	= Color( 31, 31, 31, 255 )
+SKIN.colCategoryText			= Color( 255, 255, 255, 255 )
+SKIN.colCategoryTextInactive	= Color( 225, 225, 225, 255 )
+SKIN.fontCategoryHeader			= "TabLarge"
+
+derma.DefineSkin( "ocrp_skin", "A Derma skin for OrangeCosmos", SKIN )

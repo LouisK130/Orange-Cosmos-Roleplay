@@ -1,0 +1,10 @@
+"ocrp"
+{
+    "title"  "Orange Cosmos RP (ZG)"
+    "version"   "1.0"
+    "menusystem"    "1"
+
+    "icon"  ""
+    "info"  ""
+    "hide"  ""
+}
