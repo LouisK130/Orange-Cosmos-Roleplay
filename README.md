@@ -55,3 +55,123 @@ CREATE TABLE `DATABASE`.`ocrp_orgs` (
   `perks` text
 ) ENGINE=InnoDB;
 ```
+
+Here's a recommended setup for ULib groups (garrysmod/data/ulib/groups.txt)
+```
+"owner"	
+{
+	"allow"	
+	{
+		"ulx addgroup"
+		"ulx adduser"
+		"ulx adduserid"
+		"ulx banid"
+		"ulx cexec"
+		"ulx ent"
+		"ulx exec"
+		"ulx groupallow"
+		"ulx groupdeny"
+		"ulx hiddenecho"
+		"ulx logchat"
+		"ulx logdir"
+		"ulx logecho"
+		"ulx logechocolorconsole"
+		"ulx logechocolordefault"
+		"ulx logechocoloreveryone"
+		"ulx logechocolormisc"
+		"ulx logechocolorplayer"
+		"ulx logechocolorplayerasgroup"
+		"ulx logechocolors"
+		"ulx logechocolorself"
+		"ulx logevents"
+		"ulx logfile"
+		"ulx logjoinleaveecho"
+		"ulx logspawns"
+		"ulx logspawnsecho"
+		"ulx luarun"
+		"ulx maul"
+		"ulx rcon"
+		"ulx removegroup"
+		"ulx removeuser"
+		"ulx removeuserid"
+		"ulx renamegroup"
+		"ulx setgroupcantarget"
+		"ulx stopvote"
+		"ulx userallow"
+		"ulx userallowid"
+		"ulx userdeny"
+		"ulx userdenyid"
+		"ulx voteecho"
+		"xgui_gmsettings"
+		"xgui_managebans"
+		"xgui_managegroups"
+		"xgui_svsettings"
+	}
+	"inherit_from"	"superadmin"
+}
+"elite"	
+{
+	"allow"	
+	{
+	}
+	"can_target"	"elite"
+	"inherit_from"	"vip"
+}
+"admin"	
+{
+	"allow"	
+	{
+		"ulx ban"
+		"ulx bring"
+		"ulx freeze"
+		"ulx gag"
+		"ulx goto"
+		"ulx kick"
+		"ulx kickafternamechanges"
+		"ulx kickafternamechangescooldown"
+		"ulx kickafternamechangeswarning"
+		"ulx mute"
+		"ulx noclip"
+		"ulx reservedslots"
+		"ulx return"
+		"ulx rslots"
+		"ulx rslotsmode"
+		"ulx rslotsvisible"
+		"ulx seeanonymousechoes"
+		"ulx unfreeze"
+		"ulx ungag"
+		"ulx unmute"
+		"ulx who"
+	}
+	"can_target"	"user"
+	"inherit_from"	"user"
+}
+"superadmin"	
+{
+	"can_target"	"!%owner"
+	"allow"	
+	{
+		"ulx banid"
+		"ulx unban"
+		"xgui_managebans"
+	}
+	"inherit_from"	"admin"
+}
+"vip"	
+{
+	"can_target"	"vip"
+	"allow"	
+	{
+	}
+	"inherit_from"	"user"
+}
+"user"	
+{
+	"allow"	
+	{
+		"ulx cac"
+		"ulx help"
+	}
+	"can_target"	"user"
+}
+```
