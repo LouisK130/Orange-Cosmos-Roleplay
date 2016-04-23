@@ -9,3 +9,4 @@ Requires:
 * ULX
 * ULib
 * OCRP Content Pack
+* MySQL Database
