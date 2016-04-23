@@ -21,3 +21,37 @@ Recommended:
 Notes:
 * The messages that display periodically can be modified in server/messages.lua
 * The artwork is all for a community I ran called ZetaGaming, you'll have to edit it yourself if you want it to be different.
+
+You need to create two SQL tables with the following structures
+```
+CREATE TABLE `DATABASE`.`ocrp_users` (
+  `STEAM_ID` tinytext,
+  `nick` text,
+  `org_id` smallint(6) NOT NULL,
+  `cars` mediumtext,
+  `wallet` bigint(20) NOT NULL,
+  `bank` bigint(20) NOT NULL,
+  `inv` mediumtext,
+  `skills` text,
+  `wardrobe` text,
+  `face` text,
+  `storage` text,
+  `playtime` int(11) NOT NULL,
+  `model` text,
+  `refedby` tinytext,
+  `blacklist` text,
+  `buddies` text,
+  `org_notes` text,
+  `itembank` mediumtext
+) ENGINE=InnoDB;
+```
+```
+CREATE TABLE `DATABASE`.`ocrp_orgs` (
+  `orgid` int(11) NOT NULL,
+  `owner` tinytext,
+  `name` tinytext,
+  `applicants` text,
+  `lastactivity` int(11) NOT NULL,
+  `perks` text
+) ENGINE=InnoDB;
+```
