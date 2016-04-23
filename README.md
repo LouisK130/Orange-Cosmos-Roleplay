@@ -22,7 +22,7 @@ Notes:
 * The messages that display periodically can be modified in server/messages.lua
 * The artwork is all for a community I ran called ZetaGaming, you'll have to edit it yourself if you want it to be different.
 
-You need to create two SQL tables with the following structures
+You need to create two SQL tables with the following structures:
 ```
 CREATE TABLE `DATABASE`.`ocrp_users` (
   `STEAM_ID` tinytext,
