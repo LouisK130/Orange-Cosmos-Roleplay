@@ -10,3 +10,7 @@ Requires:
 * ULib
 * OCRP Content Pack
 * MySQL Database
+
+Recommended:
+* Atmos Weather
+* Some anticheat
