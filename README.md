@@ -10,6 +10,7 @@ Requires:
 * ULib
 * OCRP Content Pack
 * MySQL Database
+* mysqloo module
 * rp_evocity_v4b1 (could be adapted for other maps with basic knowledge of Lua)
 
 Recommended:
