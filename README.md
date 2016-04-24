@@ -4,8 +4,8 @@ An updated version of the old Garry's Mod gamemode run initially by Orange Cosmo
 This was a Lua learning project for me. As such, do not expect perfection. Issues are definitely present, but if you report them I'll do my best to fix. I didn't intend initially to release this, but I don't have the time to run it on a server and it feels a waste not to share. I'm also happy to accept pull requests.
 
 ## Requires:
-* VCMod (Compatible with [1.735](https://scriptfodder.com/scripts/download/21/2229) and maybe 1.736, but not any of the newer versions)
-* VCMod ELS (Compatible with [1.123](https://scriptfodder.com/scripts/download/489/2174) and maybe 1.124, but not any of the newer versions)
+* VCMod (Compatible with [1.736](https://scriptfodder.com/scripts/download/21/7058) but not any of the newer versions)
+* VCMod ELS (Compatible with [1.124](https://scriptfodder.com/scripts/download/489/7057) but not any of the newer versions)
 * ULX
 * ULib
 * [OCRP Content Pack](http://www.mediafire.com/download/ao9qdqspov18xae/ocrp-content.zip) (on client and server)
