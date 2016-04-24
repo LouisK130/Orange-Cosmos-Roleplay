@@ -3,7 +3,7 @@ An updated version of the old Garry's Mod gamemode run initially by Orange Cosmo
 
 This was a Lua learning project for me. As such, do not expect perfection. Issues are definitely present, but if you report them I'll do my best to fix. I didn't intend initially to release this, but I don't have the time to run it on a server and it feels a waste not to share. I'm also happy to accept pull requests.
 
-Requires:
+## Requires:
 * VCMod
 * VCMod ELS
 * ULX
@@ -13,29 +13,44 @@ Requires:
 * [mysqloo module] (https://facepunch.com/showthread.php?t=1515853)
 * [rp_evocity_v4b1](http://www.mediafire.com/download/n05bdy0y1t5cabc/RP_EvoCity_v4b1.zip) (could be adapted for other maps with basic knowledge of Lua)
 
-Recommended:
+## Recommended:
 * Atmos Weather
 * Some anticheat
 
 
-Notes:
+## Notes:
 * The messages that display periodically can be modified in server/messages.lua
 * The artwork is all for a community I ran called ZetaGaming, you'll have to edit it yourself if you want it to be different.
 
-Setup:
-1. If you do not have a MySQL server, stop here.
-2. Install and update Garry's Mod dedicated server
-3. Add VCMod, VCMod ELS, ULX, and ULib addons to addons folder (Atmos weather optional)
-4. Add OCRP Content Pack to server addons folder (materials not necessary if space is tight)
-5. Add rp_evocity_v4b1 to maps folder
-6. Install mysqloo module using instructions at download page
-7. Create a new database on MySQL server named "OCRP" or similar
-8. Create two new tables with the structures below
-9. Optionally create a new user with privileges limited to these two tables
-10. Open ocrp/gamemode/server/mysql_handle.lua and update the top with your MySQL login information
-11. Open garrysmod/data/ulib/groups.txt and modify to your likings, recommended contents below (owner, superadmin, admin, elite, vip, user)
-12. Launch server ensuring rp_evocity_v4b1 is selected map and ocrp selected gamemode
-13. If you have any problems after this point, make sure you followed the above steps properly and then contact me.
+## Setup:  
+
+1. If you do not have a MySQL server, stop here  
+
+2. Install and update Garry's Mod dedicated server  
+
+3. Add VCMod, VCMod ELS, ULX, and ULib addons to addons folder (Atmos weather optional)  
+
+4. Add OCRP Content Pack to server addons folder (materials not necessary if space is tight)  
+
+5. Add rp_evocity_v4b1 to maps folder  
+
+6. Install mysqloo module using instructions at download page  
+
+7. Create a new database on MySQL server named "OCRP" or similar  
+
+8. Create two new tables with the structures below  
+
+9. Optionally create a new user with privileges limited to these two tables  
+
+10. Open ocrp/gamemode/server/mysql_handle.lua and update the top with your MySQL login information  
+
+11. Open garrysmod/data/ulib/groups.txt and modify to your likings, recommended contents below (owner, superadmin, admin, elite, vip, user)  
+
+12. Launch server ensuring rp_evocity_v4b1 is selected map and ocrp selected gamemode  
+
+13. Make sure OCRP Content Pack is installed on client (I recommend you add to a fastdl server but also allow clients to download the zip online somewhere)
+
+14. If you have any problems after this point, make sure you followed the above steps properly and then contact me  
 
 ```
 CREATE TABLE `DATABASE`.`ocrp_users` (
