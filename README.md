@@ -38,7 +38,7 @@ This was a Lua learning project for me. As such, do not expect perfection. Issue
 
 7. Create a new database on MySQL server named "OCRP" or similar  
 
-8. Create two new tables with the structures below  
+8. Create two new tables with the structures below (most SQL clients should have an option to perform a query manually, you can paste in the structures below making sure to replace DATABASE with whatever you named the database in step 7)  
 
 9. Optionally create a new user with privileges limited to these two tables  
 
