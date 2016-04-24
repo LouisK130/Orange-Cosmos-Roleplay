@@ -1,14 +1,14 @@
-resource.AddWorkshop("610520244")
-resource.AddWorkshop("610514738")
-resource.AddWorkshop("610512348")
-resource.AddWorkshop("610510534")
-resource.AddWorkshop("610509078")
-resource.AddWorkshop("610506772")
-resource.AddWorkshop("610505257")
-resource.AddWorkshop("610503726")
-resource.AddWorkshop("610502349")
-resource.AddWorkshop("610500687")
-resource.AddWorkshop("610031716")
+--[[resource.AddWorkshop("610520244") -- Player models
+resource.AddWorkshop("610514738") -- Materials 5
+resource.AddWorkshop("610512348") -- Materials 4
+resource.AddWorkshop("610510534") -- Materials 3
+resource.AddWorkshop("610509078") -- Materials 2
+resource.AddWorkshop("610506772") -- Materials 1
+resource.AddWorkshop("610505257") -- Car Models 4
+resource.AddWorkshop("610503726") -- Car Models 3
+resource.AddWorkshop("610502349") -- Car Models 2
+resource.AddWorkshop("610500687") -- Car Models 1
+resource.AddWorkshop("610031716")]] -- Misc. Content
 resource.AddFile("resource/fonts/permanentmarker.ttf")
 
 RunConsoleCommand("net_maxfilesize", 500)
