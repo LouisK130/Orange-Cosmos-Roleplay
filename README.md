@@ -30,7 +30,7 @@ This was a Lua learning project for me. As such, do not expect perfection. Issue
 
 3. Add VCMod, VCMod ELS, ULX, and ULib addons to addons folder (Atmos weather optional)  
 
-4. Open addons/vcmod1/lua/autorun/server/VC_Settings.lua and paste ensure that the settings match those shown in Helpful Snippets section below
+4. Open addons/vcmod1/lua/autorun/server/VC_Settings.lua and ensure that the settings match those shown in Helpful Snippets section below
 
 4. Add OCRP Content Pack to server addons folder (materials not necessary if space is tight)  
 
