@@ -30,6 +30,8 @@ This was a Lua learning project for me. As such, do not expect perfection. Issue
 
 3. Add VCMod, VCMod ELS, ULX, and ULib addons to addons folder (Atmos weather optional)  
 
+4. Open addons/vcmod1/lua/autorun/server/VC_Settings.lua and paste ensure that the settings match those shown in Helpful Snippets section below
+
 4. Add OCRP Content Pack to server addons folder (materials not necessary if space is tight)  
 
 5. Add rp_evocity_v4b1 to maps folder  
@@ -44,13 +46,17 @@ This was a Lua learning project for me. As such, do not expect perfection. Issue
 
 10. Open ocrp/gamemode/server/mysql_handle.lua and update the top with your MySQL login information  
 
-11. Open garrysmod/data/ulib/groups.txt and modify to your likings, recommended contents below (owner, superadmin, admin, elite, vip, user)  
+11. Open garrysmod/data/ulib/groups.txt and modify to your likings, recommended contents below (make sure to include owner, superadmin, admin, elite, vip, user)  
 
 12. Launch server ensuring rp_evocity_v4b1 is selected map and ocrp selected gamemode  
 
 13. Make sure OCRP Content Pack is installed on client (I recommend you add to a fastdl server but also allow clients to download the zip online somewhere)
 
 14. If you have any problems after this point, make sure you followed the above steps properly and then contact me  
+
+## Helpful Snippets
+
+#### SQL Structures
 
 ```
 CREATE TABLE `DATABASE`.`ocrp_users` (
@@ -84,8 +90,65 @@ CREATE TABLE `DATABASE`.`ocrp_orgs` (
   `perks` text NOT NULL
 ) ENGINE=InnoDB;
 ```
+#### VCMod Main settings
 
-Here's a recommended setup for ULib groups (garrysmod/data/ulib/groups.txt)
+```
+VC_Settings_Data = {
+VC_Enabled = true,
+
+VC_Wheel_Lock = true,
+VC_Brake_Lock = true,
+VC_Door_Sounds = true,
+VC_Truck_BackUp_Sounds = true,
+VC_Wheel_Dust = true,
+VC_Wheel_Dust_Brakes = true,
+VC_Exit_Velocity = true,
+VC_Exit_NoCollision = true,
+VC_Exhaust_Effect = true,
+VC_Passenger_Seats = true,
+
+VC_RepairTool_Speed_M = 1,
+
+VC_Lights = true,
+VC_Lights_Night = true,
+VC_Lights_HandBrake = false,
+VC_Lights_Interior = false,
+VC_Lights_Blinker_OffOnExit = false,
+VC_HeadLights = true,
+VC_LightsOffTime = 300,
+VC_HLightsOffTime = 30,
+VC_HLights_Dist_M = 0.5,
+
+VC_Cruise_Enabled = true,
+VC_Cruise_OffOnExit = true,
+
+VC_Horn_Volume = 1,
+VC_Horn_Enabled = true,
+
+VC_NPC_AutoSpawn = false,
+VC_NPC_RefundPrice = 75,
+VC_NPC_Remove = true,
+VC_NPC_Remove_Time = 1000,
+
+VC_Trl_Enabled = false,
+VC_Trl_Dist = 200,
+VC_Trl_Mult = 1,
+VC_Trl_Enabled_Reg = false,
+
+VC_Damage = true,
+VC_PhysicalDamage = false,
+VC_PhysicalDamage_Mult = 1,
+VC_Dmg_Fire_Duration = 30,
+VC_Health_Multiplier = 1,
+VC_Damage_Expl_Rem = false,
+VC_Damage_Expl_Rem_Time = 400,
+
+VC_Reduce_Ply_Dmg_InVeh = false,
+VC_Reduce_Ply_Dmg_InVeh_Mult = 1.0,
+}
+```
+
+#### ULib groups (garrysmod/data/ulib/groups.txt)
 ```
 "owner"	
 {
