@@ -54,34 +54,34 @@ This was a Lua learning project for me. As such, do not expect perfection. Issue
 
 ```
 CREATE TABLE `DATABASE`.`ocrp_users` (
-  `STEAM_ID` tinytext,
-  `nick` text,
+  `STEAM_ID` tinytext NOT NULL,
+  `nick` text NOT NULL,
   `org_id` smallint(6) NOT NULL,
-  `cars` mediumtext,
+  `cars` mediumtext NOT NULL,
   `wallet` bigint(20) NOT NULL,
   `bank` bigint(20) NOT NULL,
-  `inv` mediumtext,
-  `skills` text,
-  `wardrobe` text,
-  `face` text,
-  `storage` text,
+  `inv` mediumtext NOT NULL,
+  `skills` text NOT NULL,
+  `wardrobe` text NOT NULL,
+  `face` text NOT NULL,
+  `storage` text NOT NULL,
   `playtime` int(11) NOT NULL,
-  `model` text,
-  `refedby` tinytext,
-  `blacklist` text,
-  `buddies` text,
-  `org_notes` text,
-  `itembank` mediumtext
+  `model` text NOT NULL,
+  `refedby` tinytext NOT NULL,
+  `blacklist` text NOT NULL,
+  `buddies` text NOT NULL,
+  `org_notes` text NOT NULL,
+  `itembank` mediumtext NOT NULL
 ) ENGINE=InnoDB;
 ```
 ```
 CREATE TABLE `DATABASE`.`ocrp_orgs` (
   `orgid` int(11) NOT NULL,
-  `owner` tinytext,
-  `name` tinytext,
-  `applicants` text,
+  `owner` tinytext NOT NULL,
+  `name` tinytext NOT NULL,
+  `applicants` text NOT NULL,
   `lastactivity` int(11) NOT NULL,
-  `perks` text
+  `perks` text NOT NULL
 ) ENGINE=InnoDB;
 ```
 
