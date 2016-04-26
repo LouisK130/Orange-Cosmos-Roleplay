@@ -6,6 +6,7 @@ This was a Lua learning project for me. As such, do not expect perfection. Issue
 ## Requires:
 * VCMod (Compatible with [1.736](https://scriptfodder.com/scripts/download/21/7058) but not any of the newer versions)
 * VCMod ELS (Compatible with [1.124](https://scriptfodder.com/scripts/download/489/7057) but not any of the newer versions)
+* [OCRP VCMod Modifications](http://www.mediafire.com/download/x6767r2gz5fhh9e/OCRP_VCMod_Modifications.zip)
 * ULX
 * ULib
 * [OCRP Content Pack](http://www.mediafire.com/download/ao9qdqspov18xae/ocrp-content.zip) (on client and server)
@@ -31,6 +32,8 @@ This was a Lua learning project for me. As such, do not expect perfection. Issue
 3. Add VCMod, VCMod ELS, ULX, and ULib addons to addons folder (Atmos weather optional)  
 
 4. Open addons/vcmod1/lua/autorun/server/VC_Settings.lua and ensure that the settings match those shown in Helpful Snippets section below
+
+4. Download [OCRP VCMod Modifications](http://www.mediafire.com/download/x6767r2gz5fhh9e/OCRP_VCMod_Modifications.zip), unzip, drag and drop the vcmod1 folder into garrysmod/addons
 
 4. Add OCRP Content Pack to server addons folder (materials not necessary if space is tight)  
 
