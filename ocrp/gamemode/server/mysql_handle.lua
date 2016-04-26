@@ -2,6 +2,15 @@ require("mysqloo")
 
 ocrpdb = mysqloo.connect('HOST', 'USERNAME', 'PASSWORD', 'DATABASE', 3306)
 
+function ocrpdb:onConnected()
+    print("[OCRP] Successfully connected to database.")
+end
+
+function ocrpdb:onConnectionFailed(err)
+    print("[OCRP] Connection to database failed.")
+    print("[OCRP] Error: " .. err)
+end
+
 ocrpdb:connect()
 
 function runOCRPQuery(sql, callback, errcallback)

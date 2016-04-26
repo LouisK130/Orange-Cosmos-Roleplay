@@ -1,6 +1,6 @@
 "ocrp"
 {
-    "title"  "Orange Cosmos RP (ZG)"
+    "title"  "Orange Cosmos RP"
     "version"   "1.0"
     "menusystem"    "1"
 
