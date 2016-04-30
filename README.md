@@ -4,9 +4,9 @@ An updated version of the old Garry's Mod gamemode run initially by Orange Cosmo
 This was a Lua learning project for me. As such, do not expect perfection. Issues are definitely present, but if you report them I'll do my best to fix. I didn't intend initially to release this, but I don't have the time to run it on a server and it feels a waste not to share. I'm also happy to accept pull requests.
 
 ## Requires:
-* VCMod (Compatible with [1.736](https://scriptfodder.com/scripts/download/21/7058) but not any of the newer versions)
-* VCMod ELS (Compatible with [1.124](https://scriptfodder.com/scripts/download/489/7057) but not any of the newer versions)
-* [OCRP VCMod Modifications](http://www.mediafire.com/download/x6767r2gz5fhh9e/OCRP_VCMod_Modifications.zip)
+* VCMod (Compatible with [1.735](https://scriptfodder.com/scripts/download/21/2229) but not any of the newer versions)
+* VCMod ELS (Compatible with [1.123](https://scriptfodder.com/scripts/download/489/2174) but not any of the newer versions)
+* [OCRP VCMod Modifications](http://www.mediafire.com/download/wtdws132m9uftua/OCRP_VCMod_Modifications_2.0.zip)
 * ULX
 * ULib
 * [OCRP Content Pack](http://www.mediafire.com/download/ao9qdqspov18xae/ocrp-content.zip) (on client and server)
@@ -33,7 +33,7 @@ This was a Lua learning project for me. As such, do not expect perfection. Issue
 
 4. Open addons/vcmod1/lua/autorun/server/VC_Settings.lua and ensure that the settings match those shown in Helpful Snippets section below
 
-4. Download [OCRP VCMod Modifications](http://www.mediafire.com/download/x6767r2gz5fhh9e/OCRP_VCMod_Modifications.zip), unzip, drag and drop the vcmod1 folder into garrysmod/addons
+4. Download [OCRP VCMod Modifications](http://www.mediafire.com/download/x6767r2gz5fhh9e/OCRP_VCMod_Modifications.zip), unzip, drag and drop both the vcmod1 and vcmod1_els folders into garrysmod/addons
 
 4. Add OCRP Content Pack to server addons folder (materials not necessary if space is tight)  
 
