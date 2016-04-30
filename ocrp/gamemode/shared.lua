@@ -1200,11 +1200,12 @@ function GetChatType(s)
 			msg = s
 		end
 	end
-    
+    local pmtarget = nil
     if word1 == "/pm" then
         local target = ULib.getUser(words[2], false)
         if target and target:IsValid() then
             words[2] = "(To " .. target:Nick() .. ")"
+            pmtarget = target
         end
     end
 	
@@ -1220,7 +1221,7 @@ function GetChatType(s)
 	if word1 == "/taxi" then msg = "calls for a taxi." end
 	if word1 == "/help" then msg = "yells for help!" end
     if word1 == "/pm" then
-        return type,msg,ULib.getUser(words[2], false) -- return a PM target too
+        return type,msg,pmtarget -- return a PM target too
     end
 	
 	return type,msg

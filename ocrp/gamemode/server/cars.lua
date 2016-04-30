@@ -909,8 +909,8 @@ util.AddNetworkString("OCRP_CarLeave_PauseRadio")
 function GetOutOfCar( ply, veh)
     if ply.VC_ChnSts == true then return end
     if ply.IsAdminMode then
-        Player:SetColor(Color(255,255,255,0));
-        Player:SetNoDraw(true);
+        ply:SetColor(Color(255,255,255,0));
+        ply:SetNoDraw(true);
     end
 	local Vehicle = veh
 	if Vehicle:GetClass() == "prop_vehicle_prisoner_pod" and Vehicle:GetParent()
