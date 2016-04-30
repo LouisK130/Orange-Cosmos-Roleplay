@@ -57,6 +57,7 @@ function PushSQLData()
     
     for id,t in pairs(GAMEMODE.DisconnectSaves) do
         if not t or table.Count(t) == 0 then continue end -- Don't save blank data. Not sure how this is happening but it has twice already.
+        if t["wallet"] == nil || t["wallet"] == "" then continue end -- Above line didn't fix it. I'm hoping this will. Wallet should never be nil or "", at the very least it's 0.
         for _,column in pairs(columns) do
             updates[column] = updates[column] .. "WHEN `STEAM_ID` = '" .. ocrpdb:escape(id) .. "' THEN '" .. ocrpdb:escape(tostring(t[column])) .. "' "
         end
