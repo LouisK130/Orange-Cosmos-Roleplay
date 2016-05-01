@@ -554,10 +554,10 @@ function GM:EntityTakeDamage( ent, dmginfo)
     inflictor = dmginfo:GetInflictor()
     attacker = dmginfo:GetAttacker()
     amount = dmginfo:GetDamage()
-	if ent:IsNPC() and not ent:GetClass() == "npc_barnacle" then
-		amount = 0
-		dmginfo:SetDamage(0)
-        return
+	if ent:IsNPC() then
+        if ent:GetClass() != "npc_barnacle" then
+            return true
+        end
 	end
 	if !ent:IsVehicle() && ent.Seats != nil then
 		for _,seat in pairs(ent.Seats) do
