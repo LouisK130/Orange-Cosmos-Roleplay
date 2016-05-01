@@ -639,9 +639,11 @@ function GM:ScalePlayerDamage( ply, hitgroup, dmginfo )
 	if ( hitgroup == HITGROUP_STOMACH ) ||  ( hitgroup == HITGROUP_CHEST ) && (ply.BArmor and ply.BArmor:IsValid()) then
 		if dmginfo:IsBulletDamage() then
 			if dmginfo:GetAttacker():GetActiveWeapon().Peircing  != nil then 
+				if ply.BArmor and ply.BArmor:IsValid() and (dmginfo:GetAttacker():GetActiveWeapon().Peircing < ply.BArmor.Grade) then
 					dmginfo:SetDamage(0)
 					ply:SetVelocity(dmginfo:GetDamageForce()/8)
 					ply.Damage = 0
+				elseif ply.BArmor and ply.BArmor:IsValid() and dmginfo:GetAttacker():GetActiveWeapon().Peircing == ply.BArmor.Grade then
 					if math.random(1,2) == 1 then
 						dmginfo:ScaleDamage( .5 )
 						ply:SetVelocity(dmginfo:GetDamageForce()/6 )
