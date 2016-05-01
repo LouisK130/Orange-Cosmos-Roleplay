@@ -109,7 +109,7 @@ net.Receive("OCRP_Swat_Ask", function(len, ply1)
 	local nick = net.ReadString()
 	for k,v in pairs(player.GetAll()) do
 		if v:IsValid() and v:Nick() == nick and Police_HasMoney(50) then
-			ply:SwatAsk()
+			v:SwatAsk()
 			break
 		end
 	end
