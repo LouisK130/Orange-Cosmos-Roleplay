@@ -9,7 +9,7 @@ This was a Lua learning project for me. As such, do not expect perfection. Issue
 * [OCRP VCMod Modifications](http://www.mediafire.com/download/wtdws132m9uftua/OCRP_VCMod_Modifications_2.0.zip)
 * ULX
 * ULib
-* [OCRP Content Pack](http://www.mediafire.com/download/zn4rw9h92fij699/ocrp_content_May_2016.zip) (on client and server)
+* [OCRP Content Pack](http://www.mediafire.com/download/c44nhz8mh14whp7/ocrp_content_%28github%29.zip) (on client and server)
 * MySQL Database
 * [mysqloo module] (https://facepunch.com/showthread.php?t=1515853)
 * [rp_evocity_v4b1](http://www.mediafire.com/download/n05bdy0y1t5cabc/RP_EvoCity_v4b1.zip) (could be adapted for other maps with basic knowledge of Lua)
