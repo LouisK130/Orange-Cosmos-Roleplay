@@ -62,7 +62,7 @@ This was a Lua learning project for me. As such, do not expect perfection. Issue
 #### SQL Structures
 
 ```
-CREATE TABLE `DATABASE`.`ocrp_users` (
+CREATE TABLE `ocrp_users` (
   `STEAM_ID` tinytext NOT NULL,
   `nick` text NOT NULL,
   `org_id` smallint(6) NOT NULL,
@@ -84,7 +84,7 @@ CREATE TABLE `DATABASE`.`ocrp_users` (
 ) ENGINE=InnoDB;
 ```
 ```
-CREATE TABLE `DATABASE`.`ocrp_orgs` (
+CREATE TABLE `ocrp_orgs` (
   `orgid` int(11) NOT NULL,
   `owner` tinytext NOT NULL,
   `name` tinytext NOT NULL,
