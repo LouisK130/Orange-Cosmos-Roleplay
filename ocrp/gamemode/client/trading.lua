@@ -374,13 +374,22 @@ function BuildOurRealInventory(frame)
                 itemMdlPanel:SetLookAt(center)
                 itemMdlPanel:SetCamPos(center+Vector(dist, dist, 0))
                 
-                local add = vgui.Create("OCRP_BaseButton", itemPanel)
-                add:SetSize(90, 15)
-                add:SetText("Add")
-                add:SetPos(5, 115)
+                if not GAMEMODE.OCRP_Items[item].DoesntSave or item == "item_policeradio" then
+                    local add = vgui.Create("OCRP_BaseButton", itemPanel)
+                    add:SetSize(90, 15)
+                    add:SetText("Add")
+                    add:SetPos(5, 115)
 
-                function add:DoClick()
-                    AddToTradePopup(item)
+                    function add:DoClick()
+                        AddToTradePopup(item)
+                    end
+                else
+                    local cantdrop = vgui.Create("DLabel", itemPanel)
+                    cantdrop:SetFont("UiBold")
+                    cantdrop:SetTextColor(Color(100,100,100,255))
+                    cantdrop:SetText("Can't be traded")
+                    cantdrop:SizeToContents()
+                    cantdrop:SetPos(itemPanel:GetWide()/2-cantdrop:GetWide()/2, 115)
                 end
             end
             
