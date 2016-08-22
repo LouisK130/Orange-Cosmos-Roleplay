@@ -196,13 +196,13 @@ function GM:OnPlayerChat(plySpeaker, strText, boolTeamOnly, boolPlayerIsDead)
             OCRP_CHATBOX:SetAlpha(255)
             rt:InsertColorChange(col.r, col.g, col.b, col.a)
             if type != "Advert" then
-                rt:AppendText("\n" .. plySpeaker:Nick() .. GAMEMODE.Chat[type].Text)
+                rt:AppendText(plySpeaker:Nick() .. GAMEMODE.Chat[type].Text)
             else
-                rt:AppendText("\n" .. GAMEMODE.Chat[type].Text)
+                rt:AppendText(GAMEMODE.Chat[type].Text)
             end
             col = GAMEMODE.Chat[type].ChatColor or Color(255,255,255,255)
             rt:InsertColorChange(col.r, col.g, col.b, col.a)
-            rt:AppendText(msg)
+            rt:AppendText(msg .. "\n")
             
             AddToChatLogTable(plySpeaker:Nick(), type, msg)
             
@@ -240,6 +240,35 @@ net.Receive("OCRP_IsTyping", function()
     local bool = net.ReadBool()
     ply.Typing = bool
 end)
+
+-- Overwrite chat.AddText so messages like ULX come to our chatbox
+-- This is mostly just copied off some garrysmod wiki tutorial on chatboxes
+local oldAT = chat.AddText
+function chat.AddText( ... )
+    local args = { ... } -- Create a table of varargs
+    print("AT")
+    PrintTable(args)
+
+    local rt = OCRP_CHATBOX.richtext
+    
+	for _, obj in pairs( args ) do
+		if type( obj ) == "table" then -- We were passed a color object
+			rt:InsertColorChange( obj.r, obj.g, obj.b, 255 )
+		elseif type( obj ) == "string" then -- This is just a string
+			rt:AppendText( obj )
+		elseif obj:IsPlayer() then
+			local col = GAMEMODE:GetTeamColor( obj ) -- Get the player's team color
+			rt:InsertColorChange( col.r, col.g, col.b, 255 ) -- Make their name that color
+			rt:AppendText( obj:Nick() )
+		end
+	end
+
+	-- Gotta end our line for this message
+	rt:AppendText( "\n" )
+
+	-- Call the original function
+	oldAT( ... )
+end
 
 function JoinLeaveA( playerindex, playername, text, messagetype )
 	if messagetype == "chat" then return false end
