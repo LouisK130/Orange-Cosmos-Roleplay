@@ -514,7 +514,7 @@ function SprintDecay(ply, data)
 	if ply:KeyDown(IN_SPEED) && ply:OnGround() && !ply.Inhibitors.ForceWalk then
 		if math.abs(data:GetForwardSpeed()) > 0 || math.abs(data:GetSideSpeed()) > 0 then
 			data:SetMoveAngles(data:GetMoveAngles())
-			data:SetSideSpeed(data:GetSideSpeed()* 0.1)
+			data:SetSideSpeed(data:GetSideSpeed()* 0.5)
 			data:SetForwardSpeed(data:GetForwardSpeed())
 			if SV_GetEnergy(ply) > 0 && ply.ChargeInt <= CurTime()  then
                 SV_SetEnergy(ply, SV_GetEnergy(ply) - 1)
