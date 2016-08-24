@@ -374,7 +374,7 @@ function BuildOurRealInventory(frame)
                 itemMdlPanel:SetLookAt(center)
                 itemMdlPanel:SetCamPos(center+Vector(dist, dist, 0))
                 
-                if not GAMEMODE.OCRP_Items[item].DoesntSave or item == "item_policeradio" then
+                if not GAMEMODE.OCRP_Items[item].DoesntSave then
                     local add = vgui.Create("OCRP_BaseButton", itemPanel)
                     add:SetSize(90, 15)
                     add:SetText("Add")

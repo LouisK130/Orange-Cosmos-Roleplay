@@ -36,6 +36,7 @@ hook.Add("ShowSpare2", "ORCP_Trade_Player", OpenTradeWindow)
 
 function SetTradeItemAmount(ply, item, amount)
     if not ply.TradingPartner or not ply.TradingPartner:IsValid() then return end
+    if GAMEMODE.OCRP_Items[item].DoesntSave then return end
     ply.ItemsForTrade = ply.ItemsForTrade or {}
     ply.ItemsForTrade[item] = (ply.ItemsForTrade[item] or 0) + amount
     net.Start("OCRP_SetTradeItemAmount")
